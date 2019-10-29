@@ -1,0 +1,182 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            {{ 'HOME.title' | translate:params }}
+        </ion-title>
+        <div slot="end">
+                <ion-row>
+                  <ion-col>
+                    <ion-label>En</ion-label>
+                  </ion-col>
+                  <ion-col>
+                    <ion-toggle color="secondary" [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()"></ion-toggle>
+                  </ion-col>
+                  <ion-col>
+                    <ion-label>Fr</ion-label>
+                  </ion-col>
+                </ion-row>
+              </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+        <ion-card>
+                <ion-card-header>
+                    <ion-card-title style="margin-left: 3%; margin-right: 3%;">{{ 'HOME.window3_title' | translate:params }}</ion-card-title>
+                </ion-card-header>
+            </ion-card>
+        
+            <ion-grid style="--ion-grid-padding : -10%">
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div>
+                                    <div>
+                                        <img src="../../assets/icon/sit.png"
+                                            style="height: 60%; width: 60%;   margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.rest)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity1' | translate:params }}</h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div>
+                                    <div>
+                                        <img src="../../assets/icon/run.png"
+                                            style="height: 60%; width: 60% ;   margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.run)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity2' | translate:params }}</h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div class="card-header card-header-danger card-header-icon">
+                                    <div class="card-icon">
+                                        <img src="../../assets/icon/lie.png"
+                                            style="height: 60%; width: 60% ;   margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.lie)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity3' | translate:params }}</h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div class="card-header card-header-info card-header-icon">
+                                    <div class="card-icon">
+                                        <img src="../../assets/icon/stairs.png"
+                                            style="height: 60%;width: 60%; margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.stairs)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity7' | translate:params }}
+                                    </h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                  
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div class="card-header card-header-info card-header-icon">
+                                    <div class="card-icon">
+                                        <img src="../../assets/icon/fall.png"
+                                            style="height: 60%; width: 60% ;   margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.fall)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity5' | translate:params }}
+                                    </h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <div class="card-header card-header-info card-header-icon">
+                                    <div class="card-icon">
+                                        <img src="../../assets/icon/walk.png"
+                                            style="height: 60%; width: 60%;   margin-left: auto; margin-right: auto; display: block;">
+                                    </div>
+                                    <br>
+                                    <p class="card-category" style="text-align: center">{{msToTime(radar1.walk)}}</p>
+                                    <h3 class="card-title" style="text-align: center; font-weight: bold">{{ 'HOME.activity6' | translate:params }}</h3>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+        
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    
+                </ion-row>
+            </ion-grid>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>{{ 'HOME.window1_title' | translate:params }}</ion-card-title>
+        </ion-card-header>
+        <img [src]="params.image" style="width: 90%; margin-left:8% " />
+
+        <ion-card-content>
+
+            <div id="container" style="height: 400px;"></div>
+            <!--<div [chart]="stock"></div>-->
+            <!-- <canvas #lineCanvas></canvas>-->
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title> {{record_date1 | date}} Vs. {{record_date2 | date}}</ion-card-title>
+            <ion-card-subtitle>{{ 'HOME.window2_text' | translate:params }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #radarCanvas style="width: 500px; height : 500px"></canvas>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block" color="secondary" (click)='navigateTo()'>{{ 'HOME.report' | translate:params }}</ion-button>
+
+</ion-content>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.0"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+<script src="../../assets/js/multicolor_series.js"></script>
+<script src="../../assets/js/multicolor_series.min.js"></script>
+<script src="https://code.highcharts.com/modules/boost.js"></script>

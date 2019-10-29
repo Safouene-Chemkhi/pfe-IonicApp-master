@@ -1,0 +1,59 @@
+
+  
+  ion-grid, ion-row {
+    height: 100%;
+}
+
+div {border-color: #428DFF;} 
+
+ion-card{
+    --background : #ffffff ;   
+}
+
+ion-content {
+  --background: -webkit-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+  --background: -o-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+  --background: -ms-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+  --background: -moz-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+  --background: linear-gradient(172deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+
+}
+ion-slides{
+    --bullet-background: #ffffff;
+}
+
+.avatar{
+    margin: auto;
+ }
+
+ .thumbnail {
+     width: 34%;
+     margin-left: 33%;
+ }
+
+
+.button-inner {
+  display: block;
+}
+
+.swiper-container {
+    padding-bottom: 20px;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: theme-colors('mainColors', 'primary') !important;
+}
+
+[small-font] {
+  clear: both;
+  display: block;
+}
+
+.active {
+  color: theme-colors('textColors', 'primary');
+}
+
+

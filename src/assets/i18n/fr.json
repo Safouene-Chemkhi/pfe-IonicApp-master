@@ -1,0 +1,59 @@
+{
+    "HOME": {
+        "title": "Tableau de bord",
+        "window1_title": "Accélération",
+        "window2_text": "Les résultats sont affichés en minutes.",
+        "window3_title":"Activités",
+        "activity1":"Se Reposer",
+        "activity2":"Courir",
+        "activity3":"S'allonger",
+        "activity5":"Tomber",
+        "activity6":"Marcher",
+        "activity7":"Escaliers",
+        "record1":"enregistr.1",
+        "record2":"enregistr.2",
+        "report":"Écrire un rapport"
+    },
+    "LIST": {
+        "title": "Liste",
+        "column1": "Date",
+        "column2": "Durée"
+    },
+    "PROFILE": {
+        "title": "Profil",
+        "param1": "FC Repos",
+        "param2": "FC de Récupération",
+        "param3": "FC Max",
+        "window2": "I n f o   d e   P r o f i l",
+        "param4": "Date de naissance" ,
+        "param5": "Poids" ,
+        "param6":  "Taille"
+    },
+    "MENU":{
+        "1":"Profil",
+        "2":"Enregistrements",
+        "3":"Rapports",
+        "4":"Déconnexion"
+    },
+    "REPORTS":{
+        "title":"Rapports Médicales",
+        "button":"AFFICHER LES INFO DU RAPPORT",
+        "id":"Identifiant:",
+        "date":"Enregistré le:",
+        "duration":"Durée:"  
+    },
+
+    "REPORTFORM":{
+        "title":"Rapport Médicale",
+        "title2":"Feedback",
+        "question":"Comment évaluez-vous l'état en général?",
+        "state1":"Amélioré",
+        "state2":"Non amélioré",
+        "state3":"Détérioré",
+        "button":"Enregistrer",
+        "success_msg":"Feedback posté avec succès!",
+        "error":"Erreur",
+        "error_msg":"Désolé, une erreur s'est produite lors de l'envoi de votre formulaire.",
+        "notes":"Veuillez écrire vos remarques"
+    }
+}

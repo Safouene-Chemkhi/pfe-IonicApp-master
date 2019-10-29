@@ -1,0 +1,62 @@
+{
+    "HOME": {
+        "title": "Dashboard",
+        "window1_title": "Acceleration",
+        "window2_text": "The results are shown in Minutes.",
+        "window3_title":"Activities",
+        "activity1":"Resting",
+        "activity2":"Running",
+        "activity3":"Lying",
+        "activity5":"Falling",
+        "activity6":"Walking",
+        "activity7":"Stairs",
+        "record1":"record1",
+        "record2":"record2",
+        "report":"Write a report"
+
+    },
+    "LIST": {
+        "title": "List",
+        "column1": "Date",
+        "column2": "Duration"
+    },
+
+    "PROFILE": {
+        "title": "Profile",
+        "param1": "Resting HR",
+        "param2": "HR Recovery",
+        "param3": "HR Max",
+        "window2": "P r o f i l e   i n f o",
+        "param4": "Date of birth" ,
+        "param5": "Weight" ,
+        "param6":  "Height" 
+    },
+    "MENU":{
+        "1":"Profile",
+        "2":"Records",
+        "3":"Reports",
+        "4":"Logout"
+    },
+    "REPORTS":{
+        "title":"Medical Reports",
+        "button":"SHOW REPORT INFO",
+        "id":"Record ID:",
+        "date":"Recorded in:",
+        "duration":"Duration:"        
+    },
+
+    "REPORTFORM":{
+        "title":"Medical Report",
+        "title2":"Feedback",
+        "question":"How do you rate the overall status?",
+        "state1":"Improved",
+        "state2":"Unimproved",
+        "state3":"Deteriorated",
+        "button":"SUBMIT",
+        "success_msg":"Posted your feedback successfully!",
+        "error":"Error",
+        "error_msg":"Sorry there was an error sending your form.",
+        "notes":"Write your notes here"
+    }
+
+}

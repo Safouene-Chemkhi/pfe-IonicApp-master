@@ -1,0 +1,30 @@
+[textarea] {
+    height: calc(100% - 170px);
+    min-height: 280px;
+
+    ion-item {
+      height: 100%;
+
+      textarea {
+        height: calc(100% - 30px);
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .item.item-input.input-has-focus .item-inner,
+  .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  ion-content {
+    --background: -webkit-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+    --background: -o-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+    --background: -ms-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+    --background: -moz-linear-gradient(278deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+    --background: linear-gradient(172deg, rgb(38, 100, 115) 0%, rgb(69, 163, 163) 28%, rgb(123, 202, 196) 48%, rgb(176, 234, 222) 68%, rgb(204, 237, 228) 100%);
+  
+  }
+  ion-card{
+    background-color: white;
+  }

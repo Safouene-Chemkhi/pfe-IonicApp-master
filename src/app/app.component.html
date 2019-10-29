@@ -1,0 +1,27 @@
+<ion-app>
+  <ion-split-pane style="background-color: rgb(75, 115, 189)">
+    <ion-menu (ionWillOpen)="menuOpened()">
+        <ion-header header-background-image [ngStyle]="{'background-image': 'url(' + params.background + ')'}">
+                <img [src]="params.image" >
+            <h2 item-title text-center>{{params.title}}</h2>
+        </ion-header>
+      <ion-content >
+
+        <ion-list >
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages" >
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" >
+              <!--ion-icon slot="start" [name]="p.icon"></ion-icon-->
+              <ion-thumbnail style="width: 30px; height: 30px; ">
+                  <img [src]="p.icon">
+              </ion-thumbnail>
+              <ion-label style="margin-left: 30px">
+                {{p.title | translate:params }}
+              </ion-label> 
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
